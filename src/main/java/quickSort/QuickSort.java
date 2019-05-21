@@ -18,18 +18,18 @@ public class QuickSort {
   
     private int partition(int[] array, int first, int last) {
   
-        int pivotValue = array[first];
+        int pivotvalue = array[first];
         int leftmark = first + 1;
         int rightmark = last;
         boolean done = false;
         int temp = 0;
     
         while (!done) {
-            while ((leftmark <= rightmark) && (array[leftmark] <= pivotValue)) {
+            while ((leftmark <= rightmark) && (array[leftmark] <= pivotvalue)) {
                 leftmark = leftmark + 1;
             }
 
-            while ((array[rightmark] >= pivotValue) && (rightmark >= leftmark)) {
+            while ((array[rightmark] >= pivotvalue) && (rightmark >= leftmark)) {
                 rightmark = rightmark - 1;
             }    
     
